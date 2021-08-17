@@ -1,5 +1,5 @@
 class Acronym
   def self.abbreviate(string)
-    string.split(/(\s|-)+/).map(&:chr).join.gsub!(/(\s|-)+/, '').upcase
+    string.split(/[\s\-]+/).map(&:chr).join.upcase
   end
 end
